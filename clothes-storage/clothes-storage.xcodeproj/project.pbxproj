@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB9ABBAB26019095001DE2DF /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9ABBAA26019095001DE2DF /* LibraryViewController.swift */; };
+		DB9ABBAE26019990001DE2DF /* SampleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9ABBAD26019990001DE2DF /* SampleViews.swift */; };
 		DBA8C55725EC9FBA00E5EDAF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8C55625EC9FBA00E5EDAF /* MainView.swift */; };
 		DBAC879425E2D3FD002789C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAC879325E2D3FD002789C9 /* AppDelegate.swift */; };
 		DBAC879625E2D3FD002789C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAC879525E2D3FD002789C9 /* SceneDelegate.swift */; };
@@ -14,9 +16,13 @@
 		DBAC879D25E2D3FF002789C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBAC879C25E2D3FF002789C9 /* Assets.xcassets */; };
 		DBAC87AE25E2FD22002789C9 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAC87AD25E2FD22002789C9 /* EntryView.swift */; };
 		DBAC87B325E3000C002789C9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAC87B225E3000C002789C9 /* MainViewController.swift */; };
+		DBDBE8C9260930D70005822B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDBE8C8260930D70005822B /* Network.swift */; };
+		DBDBE8CC2609320C0005822B /* LibraryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDBE8CB2609320C0005822B /* LibraryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB9ABBAA26019095001DE2DF /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		DB9ABBAD26019990001DE2DF /* SampleViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViews.swift; sourceTree = "<group>"; };
 		DBA8C55625EC9FBA00E5EDAF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DBAC879025E2D3FD002789C9 /* clothes-storage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "clothes-storage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBAC879325E2D3FD002789C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +32,8 @@
 		DBAC87A125E2D3FF002789C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBAC87AD25E2FD22002789C9 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		DBAC87B225E3000C002789C9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DBDBE8C8260930D70005822B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		DBDBE8CB2609320C0005822B /* LibraryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,7 @@
 			children = (
 				DBAC879725E2D3FD002789C9 /* ViewController.swift */,
 				DBAC87B225E3000C002789C9 /* MainViewController.swift */,
+				DB9ABBAA26019095001DE2DF /* LibraryViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -83,6 +92,7 @@
 			children = (
 				DBAC87AD25E2FD22002789C9 /* EntryView.swift */,
 				DBA8C55625EC9FBA00E5EDAF /* MainView.swift */,
+				DB9ABBAD26019990001DE2DF /* SampleViews.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -90,6 +100,8 @@
 		DBAC87AC25E2FC5F002789C9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DBDBE8C8260930D70005822B /* Network.swift */,
+				DBDBE8CB2609320C0005822B /* LibraryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -166,6 +178,10 @@
 				DBA8C55725EC9FBA00E5EDAF /* MainView.swift in Sources */,
 				DBAC879425E2D3FD002789C9 /* AppDelegate.swift in Sources */,
 				DBAC879625E2D3FD002789C9 /* SceneDelegate.swift in Sources */,
+				DB9ABBAE26019990001DE2DF /* SampleViews.swift in Sources */,
+				DBDBE8CC2609320C0005822B /* LibraryModel.swift in Sources */,
+				DBDBE8C9260930D70005822B /* Network.swift in Sources */,
+				DB9ABBAB26019095001DE2DF /* LibraryViewController.swift in Sources */,
 				DBAC87AE25E2FD22002789C9 /* EntryView.swift in Sources */,
 				DBAC87B325E3000C002789C9 /* MainViewController.swift in Sources */,
 			);

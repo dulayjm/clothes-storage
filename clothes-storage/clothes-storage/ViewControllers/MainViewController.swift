@@ -50,9 +50,12 @@ class MainViewController: UIViewController {
         return button
     }()
     
+    let libraryModel = LibraryModel()
+    
     // MARK: View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        libraryModel.delegate = self
         setupMainContentView()
     }
     
@@ -62,14 +65,24 @@ class MainViewController: UIViewController {
         
     }
     
-    @objc func libraryButtonPressed() {
-        
-        
-    }
-    
     @objc func shopButtonPressed() {
         
         
     }
     
+    @objc func libraryButtonPressed() {
+        libraryModel.downloadClothes(url: URLServices.urlToServer)
+    }
+    
+}
+
+extension MainViewController: Downloadable { // implements our Downloadable protocol
+    func didReceiveData(data: Any) {
+        // The data model has been dowloaded at this point
+        // Now, pass the data model to the Holidays table view controller
+        DispatchQueue.main.sync {
+            let newViewController = LibraryViewController()
+            newViewController.model = (data as! [UIView])
+        }
+    }
 }
