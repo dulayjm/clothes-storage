@@ -16,7 +16,7 @@ class RandomModel {
         let request = networkModel.request(url: url)
         networkModel.response(request: request) { (data) in
             let model = try! JSONDecoder().decode([ClothesItem]?.self, from: data) as [ClothesItem]?
-            self.delegate?.didReceiveData(data: model! as [ClothesItem])
+            self.delegate?.didReceiveRandomData(data: model! as [ClothesItem])
         }
     }
 }
