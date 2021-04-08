@@ -13,6 +13,14 @@ protocol Downloadable: class {
     func didReceiveData(data: Any)
 }
 
+protocol RandomProtocal: class {
+    func didReceiveRandomData(data: Any)
+}
+
+protocol ShopProtocal: class {
+    func didReceiveShopData(data: Any)
+}
+
 enum URLServices {
     static let urlToServer: String = "http://localhost:3000/"
 }

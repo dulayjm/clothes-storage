@@ -51,22 +51,27 @@ class MainViewController: UIViewController {
     }()
     
     let libraryModel = LibraryModel()
+    let randomModel = RandomModel()
+    let shopModel = ShopModel()
     
     // MARK: View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         libraryModel.delegate = self
+        randomModel.delegate = self
+        shopModel.delegate = self
         setupMainContentView()
     }
     
     // MARK: Private Methods
     @objc func randomButtonPressed() {
-        
+        randomModel.downloadClothes(url: URLServices.urlToServer)
         
     }
     
     @objc func shopButtonPressed() {
-        
+        shopModel.downloadClothes(url: URLServices.urlToServer)
+
         
     }
     
@@ -76,13 +81,41 @@ class MainViewController: UIViewController {
     
 }
 
-extension MainViewController: Downloadable { // implements our Downloadable protocol
+extension MainViewController: Downloadable {
     func didReceiveData(data: Any) {
         // The data model has been dowloaded at this point
         // Now, pass the data model to the Holidays table view controller
         DispatchQueue.main.sync {
             let newViewController = LibraryViewController()
             newViewController.model = (data as! [UIView])
+            
+            // maybe switch case on the data type?
+        }
+    }
+}
+
+extension MainViewController: RandomProtocal {
+    func didReceiveRandomData(data: Any) {
+        // The data model has been dowloaded at this point
+        // Now, pass the data model to the Holidays table view controller
+        DispatchQueue.main.sync {
+            let newViewController = LibraryViewController()
+            newViewController.model = (data as! [UIView])
+            
+            // maybe switch case on the data type?
+        }
+    }
+}
+
+extension MainViewController: ShopProtocal {
+    func didReceiveShopData(data: Any) {
+        // The data model has been dowloaded at this point
+        // Now, pass the data model to the Holidays table view controller
+        DispatchQueue.main.sync {
+            let newViewController = LibraryViewController()
+            newViewController.model = (data as! [UIView])
+            
+            // maybe switch case on the data type?
         }
     }
 }

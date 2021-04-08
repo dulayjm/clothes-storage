@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB37460E261BAF5700338D04 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB37460D261BAF5700338D04 /* ShopModel.swift */; };
+		DB374615261BAFD000338D04 /* RandomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB374614261BAFD000338D04 /* RandomModel.swift */; };
+		DB374618261BB17100338D04 /* RandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB374617261BB17100338D04 /* RandomViewController.swift */; };
+		DB37461B261BB19700338D04 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB37461A261BB19700338D04 /* ShopViewController.swift */; };
 		DB9ABBAB26019095001DE2DF /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9ABBAA26019095001DE2DF /* LibraryViewController.swift */; };
 		DB9ABBAE26019990001DE2DF /* SampleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9ABBAD26019990001DE2DF /* SampleViews.swift */; };
 		DBA8C55725EC9FBA00E5EDAF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8C55625EC9FBA00E5EDAF /* MainView.swift */; };
@@ -21,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB37460D261BAF5700338D04 /* ShopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
+		DB374614261BAFD000338D04 /* RandomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomModel.swift; sourceTree = "<group>"; };
+		DB374617261BB17100338D04 /* RandomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
+		DB37461A261BB19700338D04 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		DB9ABBAA26019095001DE2DF /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		DB9ABBAD26019990001DE2DF /* SampleViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViews.swift; sourceTree = "<group>"; };
 		DBA8C55625EC9FBA00E5EDAF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -83,6 +91,8 @@
 				DBAC879725E2D3FD002789C9 /* ViewController.swift */,
 				DBAC87B225E3000C002789C9 /* MainViewController.swift */,
 				DB9ABBAA26019095001DE2DF /* LibraryViewController.swift */,
+				DB374617261BB17100338D04 /* RandomViewController.swift */,
+				DB37461A261BB19700338D04 /* ShopViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -102,6 +112,8 @@
 			children = (
 				DBDBE8C8260930D70005822B /* Network.swift */,
 				DBDBE8CB2609320C0005822B /* LibraryModel.swift */,
+				DB37460D261BAF5700338D04 /* ShopModel.swift */,
+				DB374614261BAFD000338D04 /* RandomModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,14 +187,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBAC879825E2D3FD002789C9 /* ViewController.swift in Sources */,
+				DB374618261BB17100338D04 /* RandomViewController.swift in Sources */,
 				DBA8C55725EC9FBA00E5EDAF /* MainView.swift in Sources */,
 				DBAC879425E2D3FD002789C9 /* AppDelegate.swift in Sources */,
 				DBAC879625E2D3FD002789C9 /* SceneDelegate.swift in Sources */,
 				DB9ABBAE26019990001DE2DF /* SampleViews.swift in Sources */,
 				DBDBE8CC2609320C0005822B /* LibraryModel.swift in Sources */,
+				DB374615261BAFD000338D04 /* RandomModel.swift in Sources */,
+				DB37460E261BAF5700338D04 /* ShopModel.swift in Sources */,
 				DBDBE8C9260930D70005822B /* Network.swift in Sources */,
 				DB9ABBAB26019095001DE2DF /* LibraryViewController.swift in Sources */,
 				DBAC87AE25E2FD22002789C9 /* EntryView.swift in Sources */,
+				DB37461B261BB19700338D04 /* ShopViewController.swift in Sources */,
 				DBAC87B325E3000C002789C9 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

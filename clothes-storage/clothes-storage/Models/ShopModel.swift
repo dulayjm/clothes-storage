@@ -1,23 +1,15 @@
 //
-//  LibraryModel.swift
+//  ShopModel.swift
 //  clothes-storage
 //
-//  Created by Justin Dulay on 3/22/21.
+//  Created by Justin Dulay on 4/5/21.
 //
 
 import Foundation
 
-struct ClothesItem: Decodable {
-    var hid: Int
-    var description: String
-    var month: String
-    var day: String
-    var year: String
-}
-
-class LibraryModel {
+class ShopModel {
     
-    weak var delegate: Downloadable?
+    weak var delegate: ShopProtocal?
     let networkModel = Network()
     
     func downloadClothes(url: String) {
