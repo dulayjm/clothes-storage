@@ -11,9 +11,12 @@ mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedT
 //create new user function
 async function newUser(req,res, next) {
     console.log(req)
-    const {id}
+    const {id, name, username, password}
     const user = new db.User({
-        id
+        id,
+        name,
+        username,
+        password
     })
     await user.save()
     res.status(200).json({
@@ -147,5 +150,165 @@ async function newNecklace(req, res, next) {
     res.status(200).json({
         status: 'success',
         message: `Created new necklace.`
+    })
+}
+async function newPants(req, res, next) {
+    console.log(req)
+    const {color, summer, fall, winter, spring} = req.body
+    const pants = new db.Pants({
+        color,
+        summer,
+        fall,
+        winter,
+        spring
+    })
+    await pants.save()
+    res.status(200).json({
+        status: 'success',
+        message: `Created new pants.`
+    })
+}
+async function newRing(req, res, next) {
+    console.log(req)
+    const {color, summer, fall, winter, spring} = req.body
+    const ring = new db.Rings({
+        color,
+        summer,
+        fall,
+        winter,
+        spring
+    })
+    await ring.save()
+    res.status(200).json({
+        status: 'success',
+        message: `Created new ring.`
+    })
+}
+async function newShirt(req, res, next) {
+    console.log(req)
+    const {color, summer, fall, winter, spring} = req.body
+    const shirt = new db.Shirts({
+        color,
+        summer,
+        fall,
+        winter,
+        spring
+    })
+    await shirt.save()
+    res.status(200).json({
+        status: 'success',
+        message: `Created new shirt.`
+    })
+}
+async function newShoes(req, res, next) {
+    console.log(req)
+    const {color, summer, fall, winter, spring} = req.body
+    const shoes = new db.Shoes({
+        color,
+        summer,
+        fall,
+        winter,
+        spring
+    })
+    await shoes.save()
+    res.status(200).json({
+        status: 'success',
+        message: `Created new shoes.`
+    })
+}
+async function newShorts(req, res, next) {
+    console.log(req)
+    const {color, summer, fall, winter, spring} = req.body
+    const shorts = new db.Shorts({
+        color,
+        summer,
+        fall,
+        winter,
+        spring
+    })
+    await shorts.save()
+    res.status(200).json({
+        status: 'success',
+        message: `Created new shorts.`
+    })
+}
+async function newSock(req, res, next) {
+    console.log(req)
+    const {color, summer, fall, winter, spring} = req.body
+    const sock = new db.Socks({
+        color,
+        summer,
+        fall,
+        winter,
+        spring
+    })
+    await sock.save()
+    res.status(200).json({
+        status: 'success',
+        message: `Created new socks.`
+    })
+}
+async function newSweatshirt(req, res, next) {
+    console.log(req)
+    const {color, summer, fall, winter, spring} = req.body
+    const sweatshirt = new db.Sweatshirts({
+        color,
+        summer,
+        fall,
+        winter,
+        spring
+    })
+    await sweatshirt.save()
+    res.status(200).json({
+        status: 'success',
+        message: `Created new sweatshirt.`
+    })
+}
+async function newSwimwear(req, res, next) {
+    console.log(req)
+    const {color, summer, fall, winter, spring} = req.body
+    const swimwear = new db.Swimwear({
+        color,
+        summer,
+        fall,
+        winter,
+        spring
+    })
+    await swimwear.save()
+    res.status(200).json({
+        status: 'success',
+        message: `Created new swimwear.`
+    })
+}
+async function newTie(req, res, next) {
+    console.log(req)
+    const {color, summer, fall, winter, spring} = req.body
+    const tie = new db.Ties({
+        color,
+        summer,
+        fall,
+        winter,
+        spring
+    })
+    await tie.save()
+    res.status(200).json({
+        status: 'success',
+        message: `Created new tie.`
+    })
+}
+async function newUnderwear(req, res, next) {
+    console.log(req)
+    const {color, summer, fall, winter, spring} = req.body
+    const underwear = new db.Underwear({
+        color,
+        summer,
+        fall,
+        winter,
+        spring
+    })
+    await underwear.save()
+    res.status(200).json({
+        status: 'success',
+        message: `Created new underwear.`
     })
 }
